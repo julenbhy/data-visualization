@@ -1,0 +1,18 @@
+Modelització i Visualització (MiV)
+
+Exercici 5: Visualització de dades
+ 
+	Todos los datos representados han sido extraídos de la web GLOBOCAN (https://gco.iarc.fr/). He decidido utilizar esta fuente de datos porque realizo mi TFG sobre este tema y estaba familiarizado con la web y sabía que ofrece gran cantidad de datos. No he necesitado realizar ningún preprocesado de los datos porque la información que se muestra en esta web ya se presenta de forma adecuada.
+La practica esta disponible en un repositorio de GitHub para poder visualizarla sin necesitar jupyter notebook o geopandas:
+
+(https://github.com/julenbhy/data-visualization/blob/main/data_representation.ipynb) 
+
+	He hecho tres representaciones simples: un grafico de tarta, un gráfico de distribución y un gráfico de barras. En el caso del grafico de tarta no hay mucho que comentar ya que he hecho un grafico simple con los porcentajes indicados en cada parte. En el segundo caso, podría haberlo representado con una grafico de líneas, pero he decidió utilizar el de dispersión porque mas adelante utilizo el de líneas y me ha parecido adecuado utilizar diferentes tipos. Por último, en el gráfico de barras he querido transmitir el mensaje de que la incidencia de cáncer colorrectal está directamente relacionada con el desarrollo de un país (debido a la dieta), por lo que he añadido una líneas horizontales y flechas con la intención de remarcar este hecho.
+
+	Como grafico con mas de un tipo de datos he decidido hacer un grafico con dos grupos de barras, una para la incidencia y otra para la mortalidad. A esta parte del grafico le corresponde el eje izquierdo y el inferior. Por otra parte, he superpuesto un gráfico de líneas con un color claramente diferente que indica la mortalidad por cáncer en función del grupo de edad, a este grafico le corresponde el eje derecho y superior. Considero que los dos gráficos que he superpuesto no contienen información que sea realmente relevante para mostrar junta, pero no he encontrado ninguna otra información mejor. En este grafico me hubiera gustado mostrara las franjas de edades y la mortalidad en color rojo, pero al haber tenido que utilizar ax.twiny.twinx para crear los ejes secundarios, no he sabido como modificar los colores.
+
+	Por último, he hecho un grafico con las comunidades autónomas de España que muestra los nuevos casos de cáncer con un gradiente de color. En un principio me pareció que este mapa de colores no era muy intuitivo, por lo que he añadido a la derecha una leyenda que ayuda a identificar bastante mejor lo que representa cada color. En este caso sí que he necesitado preparar los datos: he descargado un geojson con las coordenadas geográficas de cada comunidad autónoma y le he añadido un nuevo parámetro con la tasa de nuevos casos que he obtenido de GLOBOCAN.
+
+
+Julen Bohoyo Bengoetxea
+02/02/2022
